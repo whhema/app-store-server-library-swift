@@ -3,6 +3,9 @@
 import Foundation
 
 public struct TransactionHistoryRequest: Hashable {
+    public init() {
+    }
+    
     /// An optional start date of the timespan for the transaction history records you’re requesting. The startDate must precede the endDate if you specify both dates. To be included in results, the transaction’s purchaseDate must be equal to or greater than the startDate.
     ///
     ///[startDate](https://developer.apple.com/documentation/appstoreserverapi/startdate)
